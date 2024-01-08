@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+p {
+    background-color: brown;
+    color: white;
+    padding: 30px;
+}
+
+#header {
+    background-color: red;
+    color: blue;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 4px solid black;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+    margin-left: 70px;
+    border: solid black 10px;
+    padding: 30px;
+}
