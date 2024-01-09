@@ -1,0 +1,31 @@
+table, th, td {
+    border: 1px solid black;
+    /* border-spacing: 10px; */
+    border-collapse: collapse;
+}
+
+th {
+    padding: 20px;
+    background-color: brown;
+    color: white;
+}
+td {
+    padding: 5px;
+    background-color: #a5c4c5;
+}
+
+.col-tel {
+    background-color: aquamarine;
+}
+
+td:hover {
+    background-color: black;
+    color: white;
+}
+
+#tab-diff {
+    width: 100%;
+}
+#cell-spec {
+    height: 35px;
+}

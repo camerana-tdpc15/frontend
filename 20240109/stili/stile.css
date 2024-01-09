@@ -1,0 +1,35 @@
+/* h1, p {
+    color: red;
+} */
+
+/* 
+ questi sono commenti css
+ anche multilinea
+*/
+
+.seconda-sezione p {
+    color: red;
+    /* background-color: yellow; */
+}
+
+p:hover {
+    color: blue;
+    background-color: yellow;
+    font-size: 30px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.box:hover {
+    background-color: green;
+
+}
+
+tr:hover {
+    color: aliceblue;
+}
