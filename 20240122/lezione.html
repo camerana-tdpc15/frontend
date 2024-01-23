@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <form action="login.py" method="GET">
+
+        <label for="nome">Nome: </label>
+        <input id="nome" type="text"
+         name="nome"
+         placeholder="qui il tuo nome">
+        <br>
+        <label for="pwd">Password: </label>
+        <input id="pwd" type="password"
+        name="pwd"
+        placeholder="inserisci password">
+        <br>
+        <input type="submit"
+        value="Accedi">
+    </form> -->
+
+    <form action="aaa.py" method="get">
+        <label for="fistname">First name: </label>
+        <input id="fistname" name="fistname" type="text" >
+
+        <p>seleziona il tuo genere: </p>
+        <input type="radio" id="fem" name="genere" value="FEM">
+        <label for="fem">femmina</label><br>
+        <input type="radio" id="mas" name="genere" value="MAS">
+        <label for="mas">maschio</label><br>
+        <input type="radio" id="alt" name="genere" value="OTH">
+        <label for="alt">altro</label><br>
+        <!-- ...aaa.py?fistname=asddsaf&genere=FEM&... -->
+
+        <p>seleziona i tuoi cibi preferiti</p>
+        <input type="checkbox" id="cibo1" name="cibo1" value="carb" checked>
+        <label for="cibo1">carbonara</label><br>
+        <input type="checkbox" id="cibo2" name="cibo2" value="pael">
+        <label for="cibo2">paella</label><br>
+        <input type="checkbox" id="cibo3" name="cibo3" value="sush">
+        <label for="cibo3">sushi</label><br>
+        <!-- aaa.py?cibo1=carb&cibo3=sush -->
+
+        <input type="button" value="cliccami" onclick="alert('ciao')">
+
+        <input type="date" name="" id="">
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+
+        <input type="submit" value="invia form">
+    </form>
+
+</body>
+
+</html>

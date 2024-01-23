@@ -1,0 +1,28 @@
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tab1 {
+    width: 50%;
+}
+
+.intest {
+    height: 45px;
+}
+
+#tab1 tr:hover {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: red;
+}
+tr:nth-child(odd) {
+    background-color: rgb(0, 255, 174);
+}
+
+tr:first-child {
+    background-color: cadetblue;
+}

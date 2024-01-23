@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #edecec;
+    text-align: center;
+    font-family: 'Lato';
+    margin:0;
+}
+nav {
+    background-color: #4d4de1;
+    height: 30px;
+}
+nav ul {
+    margin-top: 0;
+    padding-top: 5px;
+}
+nav li {
+    display: inline;
+    padding: 20px;
+}
+nav a:link, nav a:visited,
+nav a:active, nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #4d4de1;
+    font-size: 50px;
+}
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+input {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #edecec;
+}
+
+#card-form {
+    background-color: white;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px #cacaca;
+}
+
+#card-form p {
+    font-size: 12px;
+}
+
+#card-form p a {
+    text-decoration: none;
+}
+#card-form p a:hover {
+    text-decoration: underline;
+}
+
+input[type=submit] {
+    background-color: #4d4de1;
+    color: white;
+}
+
+input[type=button] {
+    background-color: #7fd57c;
+    color: white;
+}
+
+input[type=button]:hover {
+    background-color: #75b772;
+}
+
+hr {
+    color: #edecec;
+}
+
+
+footer {
+    background-color: white;
+    padding: 20px;
+    height: 200px;
+}
