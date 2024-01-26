@@ -1,0 +1,132 @@
+header {
+    background-color: aquamarine;
+    height: 70px;
+    margin-top: 120px;
+}
+/* section static */
+#contenitore1 {
+    width: 100%;
+    border: 3px dotted black;
+    position: static;
+}
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    margin-left: 30px;
+    margin-top:30px;
+}
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: chocolate;
+}
+
+/* position relative */
+#contenitore2 {
+    width: 80%;
+    height: 300px;
+    border: 3px solid black;
+}
+.box3, .box4 {
+    width: 100px;
+    height: 100px;
+}
+.box3 {
+    background-color: chartreuse;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.box4 {
+    background-color: dodgerblue;
+    position: relative;
+    z-index: 0;
+}
+.box4:hover {
+    z-index: 2;
+}
+
+/* position absolute */
+#contenitore3 {
+    width: 100%;
+    height: 500px;
+    border: solid 3px black;
+}
+#contenitore4 {
+    width: 80%;
+    height: 50%;
+    border: 3px dotted black;
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+.box5 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+}
+
+.verde {
+    width: 33%;
+    height: 100%;
+    background-color: green;
+}
+
+.rosso {
+    width: 33%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+
+/* esempio */
+#uno {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#due {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    top: 20%;
+    left: 20%;
+}
+
+#tre {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+/* position fixed */
+.box6 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+}
+
+/* position sticky */
+.box7 {
+    background-color: greenyellow;
+    width: 230px;
+    height: 70px;
+    position: sticky;
+    left: 100px;
+    top: 100px;
+}
