@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+}
+body {
+   
+}
+header, nav, #main, footer {
+    width: 100%;
+} 
+header {
+    background-color: blue;
+    height: 400px;
+    /* position: fixed;
+    top: 0; */
+    z-index: 5;
+
+    background-image: url('../images/paesaggio.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: aqua;
+    height: 30px;
+    position: fixed;
+    top: 400px;
+    z-index: 5;
+}
+
+nav ul {
+
+}
+
+#main {
+    min-height: 400px;
+    position: relative;
+    /* top: 110px; */
+    margin-top: 30px;
+}
+section {
+    background-color: green;
+    width: 70%;
+    height: 50%;
+    padding: 40px;
+}
+article {
+    background-color: greenyellow;
+    width: 70%;
+    min-height: 200px;
+}
+
+aside {
+    background-color: blueviolet;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer {
+    background-color: burlywood;
+    height: 80px;    
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        height: 200px;
+        position: fixed;
+        top: 0;
+        background-image: url('');
+    }
+    nav {
+        top: 200px;
+    }
+    #main {
+        margin-top: 230px;
+    }
+    article {
+        display: none;
+    }
+}

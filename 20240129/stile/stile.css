@@ -1,0 +1,38 @@
+nav {
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+}
+ul {
+    color: rgb(245, 222, 178, 1);
+}
+section {
+    margin-top: 100px;
+}
+.pallino-blu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top:50px;
+    right: 50px;
+    z-index: 5;
+}
+#lavagna {                                                                                      
+    width: 70%;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    z-index: 4;
+    left: 50px;
+    top: 60px;
+}
+#lavagna2 {                                                                                      
+    width: 70%;
+    height: 200px;
+    background-color: gray;
+    
+}
