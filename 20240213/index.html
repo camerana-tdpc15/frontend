@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bs5 reference -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css custom -->
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <a class="navbar-brand" href="#">TDPC15</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Prodotti</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">tutti</a></li>
+                            <li><a class="dropdown-item" href="#">in offerta</a></li>
+                            <li><a class="dropdown-item" href="#">esauriti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid bg-danger text-light p-5">
+        <h1>titolone</h1>
+    </div>
+
+    <div class="container mt-5">
+        <h2>tdpc15</h2>
+        <p class="text-magenta">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eveniet iure neque error totam.
+            Assumenda beatae reprehenderit consequatur corporis laborum enim quisquam reiciendis rerum suscipit quos et
+            a tempora, minima, maiores atque nisi delectus fugit quas, possimus velit nobis nostrum! Hic architecto quas
+            molestiae id placeat odit, quaerat deleniti quisquam, quidem minus fugit similique officiis adipisci eos ab
+            facilis repellat mollitia. Autem consectetur neque voluptas sapiente odio ipsam nesciunt, excepturi
+            explicabo dolores velit necessitatibus repellendus dolorem rem accusamus praesentium perspiciatis itaque
+            voluptatem enim! Provident inventore cupiditate illo! Explicabo, voluptatibus aliquam odio incidunt, facilis
+            quam facere aliquid error sit accusantium vel?
+        </p>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+                <h2>il corso</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptas laboriosam temporibus
+                    minus, dicta facere. Aperiam libero neque, soluta ea commodi ex officia. Eveniet accusantium aliquam
+                    tempora delectus vitae repellat deserunt quasi aliquid, tempore perferendis, itaque doloribus
+                    temporibus quis corporis. Dicta harum soluta voluptates omnis non, quae sed ipsa consectetur?
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h2>i docenti</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptas laboriosam temporibus
+                    minus, dicta facere. Aperiam libero neque, soluta ea commodi ex officia. Eveniet accusantium aliquam
+                    tempora delectus vitae repellat deserunt quasi aliquid, tempore perferendis, itaque doloribus
+                    temporibus quis corporis. Dicta harum soluta voluptates omnis non, quae sed ipsa consectetur?
+                </p>
+            </div>
+
+
+
+            <div class="col-lg-6">
+                <h2>i docenti</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptas laboriosam temporibus
+                    minus, dicta facere. Aperiam libero neque, soluta ea commodi ex officia. Eveniet accusantium aliquam
+                    tempora delectus vitae repellat deserunt quasi aliquid, tempore perferendis, itaque doloribus
+                    temporibus quis corporis. Dicta harum soluta voluptates omnis non, quae sed ipsa consectetur?
+                </p>
+            </div>
+
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-3">
+                <h2>i docenti</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptas laboriosam temporibus
+                    minus, dicta facere. Aperiam libero neque, soluta ea commodi ex officia. Eveniet accusantium aliquam
+                    tempora delectus vitae repellat deserunt quasi aliquid, tempore perferendis, itaque doloribus
+                    temporibus quis corporis. Dicta harum soluta voluptates omnis non, quae sed ipsa consectetur?
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row bg-danger mt-5">
+
+            <div class="col-lg-6 mx-auto">
+                <h2>ciaone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam saepe sunt beatae, quis molestiae
+                    ab tempora omnis, nesciunt doloribus, reiciendis voluptas ipsum cum itaque! Alias ad laudantium
+                    maxime debitis magni. Nemo ducimus rerum consequatur. Perspiciatis aliquid dignissimos atque placeat
+                    fugiat! Pariatur animi eligendi reiciendis culpa velit delectus, magni repellat eaque?
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+
+                <table class="table table-hover table-striped table-danger table-sm">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>pippo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="table-warning">pluto</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>pippo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>pluto</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>pippo</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>2</td>
+                            <td>pluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Age</th>
+                                <th>City</th>
+                                <th>Country</th>
+                                <th>Sex</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Anna</td>
+                                <td>Pitt</td>
+                                <td>35</td>
+                                <td>New York</td>
+                                <td>USA</td>
+                                <td>Female</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- <button class="btn btn-outline-danger btn-sm">cliccami</button>
+                    <button class="btn btn-outline-danger">cliccami</button> -->
+                    <div class="d-grid">
+                        <button onclick="alert('ciao')" class="btn btn-danger btn-lg">cliccami</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.istockphoto.com/id/1363277938/it/foto/palm-tree-lined-street-che-si-affaccia-su-los-angeles-al-tramonto.jpg?s=1024x1024&w=is&k=20&c=hIDL1cl-a4ZftlxaY_5c7m8wqvBNdjF54TtZY3zz4pM="
+                                alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.freeimages.com/images/large-previews/4ff/chicago-city-1171976.jpg"
+                                alt="Chicago" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.freeimages.com/images/large-previews/fdc/new-york-series-17-1235298.jpg"
+                                alt="New York" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
