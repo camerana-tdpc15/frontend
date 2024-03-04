@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    
+}
+
+
+#header {
+    min-height: 300px;
+    font-family: 'Anta';
+
+    /* background: url('https://media.istockphoto.com/id/157639696/it/foto/viola-spazio-stelle.jpg?s=1024x1024&w=is&k=20&c=wxrqb_KqQFyUyGzhaufAir8ZsdnVxfeTekyDlM-J-ps='); */
+    background: url('../images/sfondo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-tdpc-primary {
+    background-color: #3d726f;
+}
+

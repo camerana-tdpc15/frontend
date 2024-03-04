@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS5 reference -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style/stile.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-tdpc-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TDPD15</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prodotti.html">Prodotti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Offerte</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Best</a></li>
+                            <li><a class="dropdown-item" href="#">50%</a></li>
+                            <li><a class="dropdown-item" href="#">terminate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header" class="container-fluid bg-primary text-light text-center py-5">
+        <h1>titolone</h1>
+        <h2>titolino</h2>
+    </header>
+
+    <section class="container mt-5">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <h2>ciao</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores tenetur voluptatum?
+                    Obcaecati
+                    ipsa rerum perferendis illum maiores adipisci, fugiat recusandae? Dignissimos quia dolorem dolores
+                    tempora aperiam doloremque voluptas pariatur.
+                </p>
+                <button type="button" class="btn btn-danger">Click me</button>
+            </div>
+
+            <div class="col-lg-4">
+                <h2>ciao</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores tenetur voluptatum?
+                    Obcaecati
+                    ipsa rerum perferendis illum maiores adipisci, fugiat recusandae? Dignissimos quia dolorem dolores
+                    tempora aperiam doloremque voluptas pariatur.
+                </p>
+                <button type="button" class="btn btn-warning">Click me</button>
+            </div>
+
+            <div class="col-lg-4">
+                <h2>ciao</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores tenetur voluptatum?
+                    Obcaecati
+                    ipsa rerum perferendis illum maiores adipisci, fugiat recusandae? Dignissimos quia dolorem dolores
+                    tempora aperiam doloremque voluptas pariatur.
+                </p>
+                <button type="button" class="btn btn-success">Click me</button>
+            </div>
+
+            <div class="col-lg-6 mx-auto">
+                <h2>ciao</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores tenetur voluptatum?
+                    Obcaecati
+                    ipsa rerum perferendis illum maiores adipisci, fugiat recusandae? Dignissimos quia dolorem dolores
+                    tempora aperiam doloremque voluptas pariatur.
+                </p>
+                <button type="button" class="btn btn-outline-dark">Click me</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="row mt-5">
+
+            <div class="col-lg-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Parigi</h4>
+                        <p class="card-text">
+                            5 giorni a Parigi Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#parigi">
+                            Prenota
+                        </a>
+                        <div id="parigi" class="collapse">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime rerum ex molestias nam
+                            provident nesciunt obcaecati porro nemo, laboriosam optio est aut accusantium tempore.
+                            Eveniet numquam laborum unde dignissimos dolorem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?q=80&w=1352&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Barcellona</h4>
+                        <p class="card-text">
+                            3 giorni a Barcellona Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#barcellona">
+                            Prenota
+                        </a>
+                        <div id="barcellona" class="collapse">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime rerum ex molestias nam
+                            provident nesciunt obcaecati porro nemo, laboriosam optio est aut accusantium tempore.
+                            Eveniet numquam laborum unde dignissimos dolorem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top"
+                        src="https://media.istockphoto.com/id/940619078/it/foto/veduta-del-centro-di-torino-torino.jpg?s=1024x1024&w=is&k=20&c=QrhXN_n9Iv_TpkZzLAWo813VvkCFYOFbQn8K0VpIaKo="
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Torino</h4>
+                        <p class="card-text">
+                            1 giorno a Torino Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            data-bs-toggle="collapse" data-bs-target="#torino">
+                            Prenota
+                        </a>
+                        <div id="torino" class="collapse">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime rerum ex molestias nam
+                            provident nesciunt obcaecati porro nemo, laboriosam optio est aut accusantium tempore.
+                            Eveniet numquam laborum unde dignissimos dolorem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+
+    <div id="demo" class="collapse">
+        Lorem ipsum dolor text....
+    </div> -->
+
+
+    <section id="sezione1">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- immagine -->
+            </div>
+            <div class="col-lg-6">
+                <!-- testo -->
+            </div>
+        </div>
+    </section>
+
+    <section id="sezione2">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- testo -->
+            </div>
+            <div class="col-lg-6">
+                <!-- immagine -->
+            </div>
+        </div>
+    </section>
+
+    <button onclick="alert('ciao')"></button>
+
+</body>
+
+</html>
