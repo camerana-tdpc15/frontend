@@ -1,0 +1,15 @@
+.card-img-top {
+    filter: grayscale(100%);
+    transition: 1.5s;
+}
+
+.card-img-top:hover {
+    filter: grayscale(0%);
+}
+
+.card {
+    transition: 1.5s;
+}
+.card:hover  {
+    transform: scale(1.1);
+}
