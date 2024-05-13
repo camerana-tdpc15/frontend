@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Il vecchio e il mare",
+        "author": {
+            "firstName": "Ernesto",
+            "lastName": "Eminguaio"
+        },
+        "cover": "copertina_libro.jpg",
+        "pages": 231,
+        "genres": ["thriller", "adventure"]
+    },
+    {
+        "id": 4,
+        "title": "javascript: la morte nera",
+        "author": {
+            "firstName": "Pippo",
+            "lastName": "Verdi"
+        },
+        "cover": "copertina_libro4.jpg",
+        "pages": 1,
+        "genres": ["demenziale", "horror"]
+    }
+]
