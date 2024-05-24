@@ -19,3 +19,15 @@ lezioni frontend tdpc15
 - [20240304]  Ripasso BS5, introduzione a JavaScript: le variabili, la console, i tipi di dato, ecc
 - [20240305]  JavaScript: array e oggetti, concatenazione di stringhe; BS5: le modal 
 - [20240308]  Javascript: ripasso array e oggetti, template string, metodi e funzioni
+- [20240311]  Javascript: eventi (onclick), innerText e innerHTML
+- [20240319]  Javascript: Manipolazione del DOM: innerText e innerHTML, style, classList (add e remove)
+- [20240322]  Javascript: Manipolazione del DOM: ripasso ed esercizi
+- [20240325]  Javascript: Manipolazione del DOM: createElement e appendChild, remove
+- [20240326]  Javascript: gestione di un form html lato JavaScript, esercizio form inserimento citta' con immagini su card BS5
+- [20240329]  Javascript: ripasso e verifica
+- [20240513]  introduzione JSON e web API, XMLHTTPRequest e fetch
+- [20240514]  JSON e web API, esempi di chiamate a web api esterne gratuite
+- [20240517]  ripasso esempi web API, querySelector, addEventListener
+- [20240520]  esempi web API cocktails e meteo
+- [20240521]  ripasso web API meteo, ripasso eventi con addEventListener, esempio preventDefault
+- 
